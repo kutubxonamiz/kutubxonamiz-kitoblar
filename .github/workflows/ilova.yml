@@ -1,0 +1,65 @@
+name: Ilovaning yangi versiyasini chiqarish
+
+# "ilova-yuklash" shoxobchasiga Kutubxonamiz.apk va version.json qo'yilganda ishlaydi.
+# Natija: doimiy havola
+#   https://github.com/<ombor>/releases/latest/download/Kutubxonamiz.apk
+# va catalog.json ichidagi "app" bo'limi (ilova shu orqali "yangi versiya bor" deydi).
+
+on:
+  push:
+    branches: [ilova-yuklash]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: catalog
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ilova-yuklash
+          path: yuklash
+
+      - name: Reliz yaratish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd yuklash
+          VER=$(python3 -c "import json;print(json.load(open('version.json'))['versionName'])")
+          NOTES=$(python3 -c "import json;print(json.load(open('version.json')).get('notes',''))")
+          gh release create "v$VER" Kutubxonamiz.apk --repo "$GITHUB_REPOSITORY" \
+            --title "Kutubxonamiz $VER" --notes "$NOTES" --latest
+          echo "VER=$VER" >> $GITHUB_ENV
+
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          path: main
+
+      - name: Katalogga yangi versiyani yozish
+        run: |
+          python3 - <<'EOF'
+          import json, os
+          v = json.load(open('yuklash/version.json', encoding='utf-8'))
+          p = 'main/catalog.json'
+          c = json.load(open(p, encoding='utf-8')) if os.path.exists(p) else {"books": []}
+          c["app"] = {
+              "versionCode": int(v["versionCode"]),
+              "versionName": v["versionName"],
+              "notes": v.get("notes", ""),
+              "apkUrl": f"https://github.com/{os.environ['GITHUB_REPOSITORY']}/releases/latest/download/Kutubxonamiz.apk",
+          }
+          json.dump(c, open(p, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+          EOF
+          cd main
+          git config user.name "Kutubxonamiz bot"
+          git config user.email "actions@github.com"
+          git add catalog.json
+          git commit -qm "Ilova versiyasi: $VER"
+          git pull -q --rebase origin main
+          git push -q origin HEAD:main
