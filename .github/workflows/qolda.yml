@@ -3,13 +3,14 @@ name: Yuborilgan kitoblarni qo'shish
 on:
   push:
     branches: ['qolda-*']
+  workflow_dispatch:
 
 permissions:
   contents: write
   actions: write
 
 concurrency:
-  group: catalog
+  group: qolda
   cancel-in-progress: false
 
 jobs:
@@ -20,11 +21,7 @@ jobs:
         with:
           ref: main
           path: main
-      - uses: actions/checkout@v5
-        with:
-          ref: ${{ github.ref_name }}
-          path: yuk
-          lfs: false
+          fetch-depth: 0
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
@@ -32,22 +29,24 @@ jobs:
         run: |
           pip install -q pillow pikepdf
           command -v pdftoppm || (sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils)
-      - name: Kitoblarni qo'shish
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: python3 main/qolda.py yuk
-      - name: Saqlash va katalogni yangilash
+      - name: Navbatdagi hamma kitoblarni qo'shish
         working-directory: main
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "Kutubxonamiz bot"
           git config user.email "actions@github.com"
-          git add -A qolda.json covers
-          if ! git diff --cached --quiet; then
-            git commit -qm "Kitoblar qo'shildi"
+          for br in $(git ls-remote --heads origin 'qolda-*' | sed 's#.*refs/heads/##' | sort); do
+            echo "== $br"
+            rm -rf ../yuk
+            git clone -q --depth 1 --branch "$br" "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" ../yuk || continue
             git pull -q --rebase origin main
-            git push -q origin HEAD:main
-          fi
-          git push -q origin --delete "${{ github.ref_name }}" || true
+            python3 qolda.py ../yuk
+            git add -A qolda.json covers
+            if ! git diff --cached --quiet; then
+              git commit -qm "Kitoblar qo'shildi"
+              for t in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
+            fi
+            git push -q origin --delete "$br" || true
+          done
           gh workflow run sync.yml --repo "$GITHUB_REPOSITORY" --ref main || true
