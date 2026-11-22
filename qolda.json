@@ -1,6 +1,42 @@
 {
  "books": [
   {
+   "id": "c2f67c076b84552a",
+   "title": "Аллоҳнинг гўзал, хабарий, ихтилофли исмлари ҳамда сифатлари ва феъллари",
+   "author": "Абу Яҳё",
+   "category": "Asma ul husna",
+   "catOrder": 500,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/c2f67c076b84552a.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/c2f67c076b84552a.jpg?v=34acfa5f",
+   "size": 21441919,
+   "added": "2026-11-22T18:56:45+00:00",
+   "description": "",
+   "lang": "kirill",
+   "group": "Asma ul husna/allohninggozalxabariyixtilofliismlarihamdasifatlarivafellari",
+   "md5": "174434acfa5f14e0f77eb8a1c74ff51ca64284b029d4b968d4d9dcd80cdd50bd",
+   "pv": 2,
+   "coverSrc": "pdf:174434acfa5f",
+   "manba": "qolda"
+  },
+  {
+   "id": "6236344b8bc59647",
+   "title": "Allohning go'zal, xabariy, ixtilofli ismlari hamda sifatlari va fe'llari",
+   "author": "Abu Yahyo",
+   "category": "Asma ul husna",
+   "catOrder": 500,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/6236344b8bc59647.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/6236344b8bc59647.jpg?v=b65128cf",
+   "size": 22226480,
+   "added": "2026-11-22T18:56:43+00:00",
+   "description": "",
+   "lang": "lotin",
+   "group": "Asma ul husna/allohninggozalxabariyixtilofliismlarihamdasifatlarivafellari",
+   "md5": "c4c4b65128cf88f4e6d39bfbeda4d77a7aa64c5f19049195dfe3f9098b35f5e3",
+   "pv": 2,
+   "coverSrc": "pdf:c4c4b65128cf",
+   "manba": "qolda"
+  },
+  {
    "id": "1df3c7d15cb8daa6",
    "title": "Муслима аёлга тегишли фатволар",
    "author": "Абу Яҳё",
