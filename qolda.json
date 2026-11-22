@@ -1,6 +1,42 @@
 {
  "books": [
   {
+   "id": "5f35996605fbc5e2",
+   "title": "Иблиснинг найранглари (2-китоб",
+   "author": "Ибнул Жавзий",
+   "category": "Iblis",
+   "catOrder": 500,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/5f35996605fbc5e2.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/5f35996605fbc5e2.jpg?v=76ebaa33",
+   "size": 60634245,
+   "added": "2026-11-22T18:58:00+00:00",
+   "description": "Якуний қисм. Шарҳловчи: Абу Яҳё",
+   "lang": "kirill",
+   "group": "Iblis/iblisningnayranglari2kitob",
+   "md5": "cea876ebaa33fbac5492a44d16590bc23bf08da23081c47bea34ad4f024775c7",
+   "pv": 2,
+   "coverSrc": "pdf:cea876ebaa33",
+   "manba": "qolda"
+  },
+  {
+   "id": "89dc277ec5310b7b",
+   "title": "Iblisning nayranglari (2-kitob",
+   "author": "Ibnul Javziy",
+   "category": "Iblis",
+   "catOrder": 500,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/89dc277ec5310b7b.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/89dc277ec5310b7b.jpg?v=e53ae1ee",
+   "size": 58339720,
+   "added": "2026-11-22T18:57:56+00:00",
+   "description": "Yakuniy qism. Sharhlovchi: Abu Yahyo",
+   "lang": "lotin",
+   "group": "Iblis/iblisningnayranglari2kitob",
+   "md5": "244be53ae1eef640f449ae57aa0b8fb652b6795b407e783eff97465d77f5ca7b",
+   "pv": 2,
+   "coverSrc": "pdf:244be53ae1ee",
+   "manba": "qolda"
+  },
+  {
    "id": "26402a3a4ca698ce",
    "title": "Иблиснинг найранглари (1-китоб",
    "author": "Ибнул Жавзий",
