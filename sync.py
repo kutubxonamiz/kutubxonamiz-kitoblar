@@ -50,7 +50,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 CATALOG = os.path.join(ROOT, "catalog.json")
 COVERS = os.path.join(ROOT, "covers")
 UNCATEGORIZED = "Umumiy"
-PROCESS_VERSION = 3  # oshirilsa, hamma PDF qayta ishlanadi
+PROCESS_VERSION = 4  # oshirilsa, hamma PDF qayta ishlanadi
 
 
 def pub_id(drive_id):
@@ -101,7 +101,7 @@ def clean_pdf(path, title, author):
     """PDF ichidagi yashirin ma'lumotlarni (kim yasagan, dastur raqamlari, rasmlardagi EXIF) olib tashlaydi."""
     try:
         from pdf_tozala import tozala
-        tozala(path, path, title, author)
+        tozala(path, path, title)  # muallif ham yozilmaydi
     except Exception as e:
         log("  metama'lumot tozalanmadi:", e)
 
