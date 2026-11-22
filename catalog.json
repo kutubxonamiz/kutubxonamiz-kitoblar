@@ -1,0 +1,28 @@
+{
+ "books": [
+  {
+   "id": "7b129fcad9cf70d3",
+   "title": "Ilmga ishtiyoq",
+   "author": "Abu Yahyo",
+   "category": "Umumiy",
+   "catOrder": 999,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/7b129fcad9cf70d3.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/7b129fcad9cf70d3.jpg?v=2c76e9b1",
+   "size": 25314603,
+   "added": "2026-11-21T17:19:55.894Z",
+   "description": "",
+   "lang": "lotin",
+   "group": "Umumiy/ilmgaishtioq",
+   "md5": "163effabb841ba9af0e5d22d705afa38",
+   "pv": 2,
+   "coverSrc": "img:0e10b40c3aed621a12bde6a22c76e9b1"
+  }
+ ],
+ "updated": "2026-11-22T05:00:34+00:00",
+ "app": {
+  "versionCode": 9,
+  "versionName": "1.1.9",
+  "notes": "Bo'limlar, yangi dizayn, lotin va kirill nusxalar",
+  "apkUrl": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/latest/download/Kutubxonamiz.apk"
+ }
+}

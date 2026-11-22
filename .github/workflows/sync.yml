@@ -1,0 +1,49 @@
+name: Drive'dan kitoblarni ko'chirish
+
+on:
+  schedule:
+    - cron: '7,37 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['sync.py', 'news_sync.py', '.github/workflows/sync.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: catalog
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Kerakli dasturlar
+        run: |
+          pip install -q pillow pikepdf google-auth requests
+          command -v pdftoppm || (sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils)
+
+      - name: Drive papkasini tekshirish va ko'chirish
+        env:
+          DRIVE_FOLDER_ID: ${{ secrets.DRIVE_FOLDER_ID }}
+          # Settings → Secrets and variables → Actions
+          DRIVE_SA_KEY: ${{ secrets.DRIVE_SA_KEY }}
+          GH_TOKEN: ${{ github.token }}
+        run: python3 sync.py
+
+      - name: Katalogni saqlash
+        run: |
+          git config user.name "Kutubxonamiz bot"
+          git config user.email "actions@github.com"
+          git add -A . ':!*.pyc' 2>/dev/null || true
+          if git diff --cached --quiet; then echo "O'zgarish yo'q"; exit 0; fi
+          git commit -qm "Katalog yangilandi"
+          git pull -q --rebase origin main
+          git push -q origin HEAD:main
