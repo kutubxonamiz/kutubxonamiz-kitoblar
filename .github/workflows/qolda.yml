@@ -2,7 +2,7 @@ name: Yuborilgan kitoblarni qo'shish
 
 on:
   push:
-    branches: [qolda-yuklash]
+    branches: ['qolda-*']
 
 permissions:
   contents: write
@@ -22,7 +22,7 @@ jobs:
           path: main
       - uses: actions/checkout@v5
         with:
-          ref: qolda-yuklash
+          ref: ${{ github.ref_name }}
           path: yuk
           lfs: false
       - uses: actions/setup-python@v6
@@ -49,5 +49,5 @@ jobs:
             git pull -q --rebase origin main
             git push -q origin HEAD:main
           fi
-          git push -q origin --delete qolda-yuklash || true
+          git push -q origin --delete "${{ github.ref_name }}" || true
           gh workflow run sync.yml --repo "$GITHUB_REPOSITORY" --ref main || true
