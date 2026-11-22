@@ -1,6 +1,42 @@
 {
  "books": [
   {
+   "id": "26402a3a4ca698ce",
+   "title": "Иблиснинг найранглари (1-китоб",
+   "author": "Ибнул Жавзий",
+   "category": "Iblis",
+   "catOrder": 500,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/26402a3a4ca698ce.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/26402a3a4ca698ce.jpg?v=b1ec8757",
+   "size": 72135299,
+   "added": "2026-11-22T18:57:46+00:00",
+   "description": "Шарҳловчи: Абу Яҳё",
+   "lang": "kirill",
+   "group": "Iblis/iblisningnayranglari1kitob",
+   "md5": "f018b1ec8757a6c94477e2db84006208d8aa2021bb117568a2ae1a029492efa0",
+   "pv": 2,
+   "coverSrc": "pdf:f018b1ec8757",
+   "manba": "qolda"
+  },
+  {
+   "id": "6b0054f723cca959",
+   "title": "Iblisning nayranglari (1-kitob",
+   "author": "Ibnul Javziy",
+   "category": "Iblis",
+   "catOrder": 500,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/6b0054f723cca959.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/6b0054f723cca959.jpg?v=41ce9f07",
+   "size": 49228562,
+   "added": "2026-11-22T18:57:42+00:00",
+   "description": "Sharhlovchi: Abu Yahyo",
+   "lang": "lotin",
+   "group": "Iblis/iblisningnayranglari1kitob",
+   "md5": "0eda41ce9f079d9d7cdef23f600495ea5b94b4c9013418d433d18dd191ca6d6d",
+   "pv": 2,
+   "coverSrc": "pdf:0eda41ce9f07",
+   "manba": "qolda"
+  },
+  {
    "id": "c2f67c076b84552a",
    "title": "Аллоҳнинг гўзал, хабарий, ихтилофли исмлари ҳамда сифатлари ва феъллари",
    "author": "Абу Яҳё",
