@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['sync.py', 'news_sync.py', '.github/workflows/sync.yml']
+    paths: ['sync.py', 'news_sync.py', 'qolda.json', '.github/workflows/sync.yml']
 
 permissions:
   contents: write
