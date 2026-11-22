@@ -1,6 +1,42 @@
 {
  "books": [
   {
+   "id": "ceab531710ffea2f",
+   "title": "Аёллар учун 60 эслатма",
+   "author": "",
+   "category": "Ayol va qizlar uchun",
+   "catOrder": 4,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/ceab531710ffea2f.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/ceab531710ffea2f.jpg?v=b3a6df45",
+   "size": 1105836,
+   "added": "2026-11-22T18:44:19+00:00",
+   "description": "",
+   "lang": "kirill",
+   "group": "Ayol va qizlar uchun/aollaruchun60eslatma",
+   "md5": "a2eab3a6df4595c4bc68ca464e3f7ca5815aa5d686ca491ede5a00deb5ec1d6b",
+   "pv": 2,
+   "coverSrc": "pdf:a2eab3a6df45",
+   "manba": "qolda"
+  },
+  {
+   "id": "af8f7368f785983f",
+   "title": "Ayollar uchun 60 eslatma",
+   "author": "",
+   "category": "Ayol va qizlar uchun",
+   "catOrder": 4,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/af8f7368f785983f.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/af8f7368f785983f.jpg?v=49d4ec24",
+   "size": 589130,
+   "added": "2026-11-22T18:44:18+00:00",
+   "description": "",
+   "lang": "lotin",
+   "group": "Ayol va qizlar uchun/aollaruchun60eslatma",
+   "md5": "5e4149d4ec24f425c9cbdf9a1c63620263b4a68920c93f4722d9933398a22a9e",
+   "pv": 2,
+   "coverSrc": "pdf:5e4149d4ec24",
+   "manba": "qolda"
+  },
+  {
    "id": "f126088807be88bc",
    "title": "Конституция ислом кўзойнагида",
    "author": "Абу Яҳё",
