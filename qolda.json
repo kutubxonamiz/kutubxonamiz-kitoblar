@@ -1,6 +1,42 @@
 {
  "books": [
   {
+   "id": "aa65a0658a1d2da1",
+   "title": "Қиссаларнинг гўзали (2-китоб",
+   "author": "Абу Яҳё",
+   "category": "Tafsir",
+   "catOrder": 1,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/aa65a0658a1d2da1.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/aa65a0658a1d2da1.jpg?v=171a30de",
+   "size": 65805611,
+   "added": "2026-11-22T18:58:29+00:00",
+   "description": "Юсуф сурасининг тафсири: 16–24-оятлар",
+   "lang": "kirill",
+   "group": "Tafsir/qissalarninggozali2kitob",
+   "md5": "8b58171a30de0af03b061eefa8dfb96d4c3054d5d80463606f2d4db44583b2c4",
+   "pv": 2,
+   "coverSrc": "pdf:8b58171a30de",
+   "manba": "qolda"
+  },
+  {
+   "id": "a6040a9c8bc5f37a",
+   "title": "Qissalarning go'zali (2-kitob",
+   "author": "Abu Yahyo",
+   "category": "Tafsir",
+   "catOrder": 1,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/a6040a9c8bc5f37a.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/a6040a9c8bc5f37a.jpg?v=eb793e4b",
+   "size": 67044023,
+   "added": "2026-11-22T18:58:25+00:00",
+   "description": "Yusuf surasining tafsiri: 16–24-oyatlar",
+   "lang": "lotin",
+   "group": "Tafsir/qissalarninggozali2kitob",
+   "md5": "9f57eb793e4b27be54db579380204b794d02afba2c6f7affc1d9c2c76ede1df7",
+   "pv": 2,
+   "coverSrc": "pdf:9f57eb793e4b",
+   "manba": "qolda"
+  },
+  {
    "id": "71f0e46c39a552a0",
    "title": "Қиссаларнинг гўзали (1-китоб",
    "author": "Абу Яҳё",
