@@ -1,6 +1,42 @@
 {
  "books": [
   {
+   "id": "fd2489fa612ecc50",
+   "title": "Эй қизим",
+   "author": "Умама бинту Хорис",
+   "category": "Ayol va qizlar uchun",
+   "catOrder": 500,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/fd2489fa612ecc50.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/fd2489fa612ecc50.jpg?v=990a5b7b",
+   "size": 48078858,
+   "added": "2026-11-22T18:41:37+00:00",
+   "description": "",
+   "lang": "kirill",
+   "group": "Ayol va qizlar uchun/eyqizim",
+   "md5": "e44d990a5b7b9dedd196d33dc528b638b106498ac6851f73d9662a30417b5e15",
+   "pv": 2,
+   "coverSrc": "pdf:e44d990a5b7b",
+   "manba": "qolda"
+  },
+  {
+   "id": "70327e96a86331c5",
+   "title": "Ey qizim",
+   "author": "Umama bintu Xoris",
+   "category": "Ayol va qizlar uchun",
+   "catOrder": 500,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/70327e96a86331c5.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/70327e96a86331c5.jpg?v=98ca336e",
+   "size": 53243873,
+   "added": "2026-11-22T18:41:34+00:00",
+   "description": "",
+   "lang": "lotin",
+   "group": "Ayol va qizlar uchun/eyqizim",
+   "md5": "b2ca98ca336eceb8cb9b116847d0eebb20f978b96c5d3685cd9cc2edaaefe4c4",
+   "pv": 2,
+   "coverSrc": "pdf:b2ca98ca336e",
+   "manba": "qolda"
+  },
+  {
    "id": "ab7b8091aa835ba0",
    "title": "Илмга иштиёқ",
    "author": "Абу Яҳё",
