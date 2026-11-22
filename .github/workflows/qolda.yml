@@ -49,4 +49,10 @@ jobs:
             fi
             git push -q origin --delete "$br" || true
           done
+          python3 qolda.py --qayta
+          git add -A qolda.json
+          if ! git diff --cached --quiet; then
+            git commit -qm "Kitoblar qayta tozalandi"
+            for t in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
+          fi
           gh workflow run sync.yml --repo "$GITHUB_REPOSITORY" --ref main || true

@@ -50,7 +50,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 CATALOG = os.path.join(ROOT, "catalog.json")
 COVERS = os.path.join(ROOT, "covers")
 UNCATEGORIZED = "Umumiy"
-PROCESS_VERSION = 2  # oshirilsa, hamma PDF qayta ishlanadi
+PROCESS_VERSION = 3  # oshirilsa, hamma PDF qayta ishlanadi
 
 
 def pub_id(drive_id):
@@ -98,20 +98,10 @@ def download(fid, dest):
 
 
 def clean_pdf(path, title, author):
-    """PDF ichidagi yashirin ma'lumotlarni (kim yasagan, dastur raqamlari) olib tashlaydi."""
+    """PDF ichidagi yashirin ma'lumotlarni (kim yasagan, dastur raqamlari, rasmlardagi EXIF) olib tashlaydi."""
     try:
-        import pikepdf
-        with pikepdf.open(path, allow_overwriting_input=True) as pdf:
-            with pdf.open_metadata(set_pikepdf_as_editor=False) as meta:
-                for k in list(meta.keys()):
-                    del meta[k]
-            info = pdf.docinfo
-            for k in list(info.keys()):
-                del info[k]
-            info["/Title"] = title
-            if author:
-                info["/Author"] = author
-            pdf.save(path)
+        from pdf_tozala import tozala
+        tozala(path, path, title, author)
     except Exception as e:
         log("  metama'lumot tozalanmadi:", e)
 

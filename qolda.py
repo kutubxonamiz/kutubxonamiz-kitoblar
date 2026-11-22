@@ -101,5 +101,35 @@ def main(src):
     sync.log(f"qolda.json: {len(books)} ta kitob")
 
 
+def qayta():
+    """Eski usulda tozalangan kitoblarni yangi tozalagich bilan qayta ishlaydi."""
+    if not os.path.exists(QOLDA):
+        return
+    data = json.load(open(QOLDA, encoding="utf-8"))
+    work = os.path.join(sync.ROOT, ".qayta")
+    os.makedirs(work, exist_ok=True)
+    changed = False
+    for b in data["books"]:
+        if b.get("pv", 0) >= sync.PROCESS_VERSION:
+            continue
+        sync.log("Qayta tozalash:", b["title"])
+        sync.gh("release", "download", sync.RELEASE, "-p", b["id"] + ".pdf", "-D", work, "--clobber")
+        pdf = os.path.join(work, b["id"] + ".pdf")
+        sync.clean_pdf(pdf, b["title"], b["author"])
+        sync.gh("release", "upload", sync.RELEASE, pdf, "--clobber")
+        b["size"] = os.path.getsize(pdf)
+        b["pv"] = sync.PROCESS_VERSION
+        os.remove(pdf)
+        changed = True
+    if changed:
+        with open(QOLDA, "w", encoding="utf-8") as fh:
+            json.dump(data, fh, ensure_ascii=False, indent=1)
+    import shutil
+    shutil.rmtree(work, ignore_errors=True)
+
+
 if __name__ == "__main__":
-    main(sys.argv[1])
+    if sys.argv[1] == "--qayta":
+        qayta()
+    else:
+        main(sys.argv[1])
