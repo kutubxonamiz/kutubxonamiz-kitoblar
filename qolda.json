@@ -1,6 +1,42 @@
 {
  "books": [
   {
+   "id": "71f0e46c39a552a0",
+   "title": "Қиссаларнинг гўзали (1-китоб",
+   "author": "Абу Яҳё",
+   "category": "Tafsir",
+   "catOrder": 1,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/71f0e46c39a552a0.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/71f0e46c39a552a0.jpg?v=b44d0b4e",
+   "size": 78571475,
+   "added": "2026-11-22T18:58:15+00:00",
+   "description": "Юсуф сурасининг тафсири: 1–15-оятлар",
+   "lang": "kirill",
+   "group": "Tafsir/qissalarninggozali1kitob",
+   "md5": "4753b44d0b4e35823dc29fc3ec3d6cc2d1459a2b39f9a426a17ca4bd3cfbddd0",
+   "pv": 2,
+   "coverSrc": "pdf:4753b44d0b4e",
+   "manba": "qolda"
+  },
+  {
+   "id": "2dfa2c3bfcd241cd",
+   "title": "Qissalarning go'zali (1-kitob",
+   "author": "Abu Yahyo",
+   "category": "Tafsir",
+   "catOrder": 1,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/2dfa2c3bfcd241cd.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/2dfa2c3bfcd241cd.jpg?v=1b5e93b8",
+   "size": 70870309,
+   "added": "2026-11-22T18:58:10+00:00",
+   "description": "Yusuf surasining tafsiri: 1–15-oyatlar",
+   "lang": "lotin",
+   "group": "Tafsir/qissalarninggozali1kitob",
+   "md5": "104c1b5e93b83e118629120b6b1e3dc27eddabf94a85b715409e0fb3971f9ddd",
+   "pv": 2,
+   "coverSrc": "pdf:104c1b5e93b8",
+   "manba": "qolda"
+  },
+  {
    "id": "5f35996605fbc5e2",
    "title": "Иблиснинг найранглари (2-китоб",
    "author": "Ибнул Жавзий",
