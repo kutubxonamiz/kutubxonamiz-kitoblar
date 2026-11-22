@@ -298,6 +298,15 @@ def main():
             "coverSrc": cover_src,
         })
 
+    # To'g'ridan-to'g'ri yuborilgan kitoblar (qolda.py yozadi)
+    qolda = os.path.join(ROOT, "qolda.json")
+    if os.path.exists(qolda):
+        for q in json.load(open(qolda, encoding="utf-8")).get("books", []):
+            q = dict(q)
+            if q["category"] in cat_order:
+                q["catOrder"] = cat_order[q["category"]]
+            books.append(q)
+
     # Drive'dan o'chirilgan kitoblarni olib tashlash
     current = {b["id"] for b in books}
     for fid in set(old) - current:

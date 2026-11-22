@@ -1,0 +1,53 @@
+name: Yuborilgan kitoblarni qo'shish
+
+on:
+  push:
+    branches: [qolda-yuklash]
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: catalog
+  cancel-in-progress: false
+
+jobs:
+  qolda:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          path: main
+      - uses: actions/checkout@v5
+        with:
+          ref: qolda-yuklash
+          path: yuk
+          lfs: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Kerakli dasturlar
+        run: |
+          pip install -q pillow pikepdf
+          command -v pdftoppm || (sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils)
+      - name: Kitoblarni qo'shish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 main/qolda.py yuk
+      - name: Saqlash va katalogni yangilash
+        working-directory: main
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "Kutubxonamiz bot"
+          git config user.email "actions@github.com"
+          git add -A qolda.json covers
+          if ! git diff --cached --quiet; then
+            git commit -qm "Kitoblar qo'shildi"
+            git pull -q --rebase origin main
+            git push -q origin HEAD:main
+          fi
+          git push -q origin --delete qolda-yuklash || true
+          gh workflow run sync.yml --repo "$GITHUB_REPOSITORY" --ref main || true
