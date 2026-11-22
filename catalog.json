@@ -1,6 +1,42 @@
 {
  "books": [
   {
+   "id": "f126088807be88bc",
+   "title": "Конституция ислом кўзойнагида",
+   "author": "Абу Яҳё",
+   "category": "Umumiy",
+   "catOrder": 999,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/f126088807be88bc.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/f126088807be88bc.jpg?v=5f50b8be",
+   "size": 3618268,
+   "added": "2026-11-22T18:43:58+00:00",
+   "description": "",
+   "lang": "kirill",
+   "group": "Umumiy/konstitusiyaislomkozoynagida",
+   "md5": "afc65f50b8be72b146a7249ec479b8d78c4c60d90ed48716fd0ec77589bcd1e6",
+   "pv": 2,
+   "coverSrc": "pdf:afc65f50b8be",
+   "manba": "qolda"
+  },
+  {
+   "id": "098b92857dc523d4",
+   "title": "Konstitutsiya islom ko'zoynagida",
+   "author": "Abu Yahyo",
+   "category": "Umumiy",
+   "catOrder": 999,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/098b92857dc523d4.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/098b92857dc523d4.jpg?v=6d59bc45",
+   "size": 3612030,
+   "added": "2026-11-22T18:43:57+00:00",
+   "description": "",
+   "lang": "lotin",
+   "group": "Umumiy/konstitusiyaislomkozoynagida",
+   "md5": "c0886d59bc4590d534cc0905b0c76e88282d4349c407a83160df24b7132dc599",
+   "pv": 2,
+   "coverSrc": "pdf:c0886d59bc45",
+   "manba": "qolda"
+  },
+  {
    "id": "e9bd058ab3cd418a",
    "title": "Кун ҳикмати 1",
    "author": "Абу Яҳё",
@@ -144,7 +180,7 @@
    "coverSrc": "img:0e10b40c3aed621a12bde6a22c76e9b1"
   }
  ],
- "updated": "2026-11-22T18:43:36+00:00",
+ "updated": "2026-11-22T18:44:22+00:00",
  "app": {
   "versionCode": 9,
   "versionName": "1.1.9",
