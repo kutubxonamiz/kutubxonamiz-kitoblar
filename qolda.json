@@ -1,6 +1,42 @@
 {
  "books": [
   {
+   "id": "c55d0da643ac2e2d",
+   "title": "Қиссаларнинг гўзали (3-китоб",
+   "author": "Абу Яҳё",
+   "category": "Tafsir",
+   "catOrder": 1,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/c55d0da643ac2e2d.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/c55d0da643ac2e2d.jpg?v=2ee82534",
+   "size": 56981589,
+   "added": "2026-11-22T18:58:42+00:00",
+   "description": "Юсуф сурасининг тафсири: 25–34-оятлар",
+   "lang": "kirill",
+   "group": "Tafsir/qissalarninggozali3kitob",
+   "md5": "5b9a2ee82534ed0345c6716309e814149026b4bb301db9bdbb280619340a52af",
+   "pv": 2,
+   "coverSrc": "pdf:5b9a2ee82534",
+   "manba": "qolda"
+  },
+  {
+   "id": "d549ec55c305da3f",
+   "title": "Qissalarning go'zali (3-kitob",
+   "author": "Abu Yahyo",
+   "category": "Tafsir",
+   "catOrder": 1,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/d549ec55c305da3f.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/d549ec55c305da3f.jpg?v=0183e2e8",
+   "size": 58550859,
+   "added": "2026-11-22T18:58:39+00:00",
+   "description": "Yusuf surasining tafsiri: 25–34-oyatlar",
+   "lang": "lotin",
+   "group": "Tafsir/qissalarninggozali3kitob",
+   "md5": "60120183e2e89574165f1004b0c90e7bf66e0394adb70b7f008749ca53d68d7e",
+   "pv": 2,
+   "coverSrc": "pdf:60120183e2e8",
+   "manba": "qolda"
+  },
+  {
    "id": "aa65a0658a1d2da1",
    "title": "Қиссаларнинг гўзали (2-китоб",
    "author": "Абу Яҳё",
