@@ -1,4 +1,35 @@
 {
- "updated": "2026-11-22T05:00:34+00:00",
- "items": []
+ "updated": "2026-11-22T05:21:02+00:00",
+ "items": [
+  {
+   "id": "96cfd2b40d34c768",
+   "title": "Sinov yangiligi (o'chiriladi)",
+   "date": "2026-11-22T05:16:50.448Z",
+   "modified": "2026-11-22T05:16:52.015Z",
+   "cover": "",
+   "excerpt": "Bu sinov uchun yozilgan matn. Ilovadagi Yangiliklar bo'limi to'g'ri ishlashini tekshiramiz. Birinchi band Ikkinchi band Oxirgi xatboshi.",
+   "blocks": [
+    {
+     "type": "h",
+     "text": "Kichik sarlavha"
+    },
+    {
+     "type": "p",
+     "text": "Bu sinov uchun yozilgan matn. Ilovadagi Yangiliklar bo'limi to'g'ri ishlashini tekshiramiz."
+    },
+    {
+     "type": "li",
+     "text": "Birinchi band"
+    },
+    {
+     "type": "li",
+     "text": "Ikkinchi band"
+    },
+    {
+     "type": "p",
+     "text": "Oxirgi xatboshi."
+    }
+   ]
+  }
+ ]
 }
