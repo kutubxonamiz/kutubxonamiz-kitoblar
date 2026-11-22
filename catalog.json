@@ -1,6 +1,24 @@
 {
  "books": [
   {
+   "id": "ab7b8091aa835ba0",
+   "title": "Илмга иштиёқ",
+   "author": "Абу Яҳё",
+   "category": "Umumiy",
+   "catOrder": 999,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/ab7b8091aa835ba0.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/ab7b8091aa835ba0.jpg?v=7e23dec8",
+   "size": 24547481,
+   "added": "2026-11-22T18:19:40+00:00",
+   "description": "",
+   "lang": "kirill",
+   "group": "Umumiy/ilmgaishtioq",
+   "md5": "6b267e23dec8d6e029049026b99052d8f8ff8ebff0b89d20ab4b748e7a574b09",
+   "pv": 2,
+   "coverSrc": "pdf:6b267e23dec8",
+   "manba": "qolda"
+  },
+  {
    "id": "7b129fcad9cf70d3",
    "title": "Ilmga ishtiyoq",
    "author": "Abu Yahyo",
@@ -18,7 +36,7 @@
    "coverSrc": "img:0e10b40c3aed621a12bde6a22c76e9b1"
   }
  ],
- "updated": "2026-11-22T05:00:34+00:00",
+ "updated": "2026-11-22T18:20:06+00:00",
  "app": {
   "versionCode": 9,
   "versionName": "1.1.9",
