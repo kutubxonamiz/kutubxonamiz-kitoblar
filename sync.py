@@ -21,7 +21,7 @@ import tempfile
 import urllib.parse
 import urllib.request
 
-from news_sync import build_about, build_news, is_news_folder
+from news_sync import build_news, is_news_folder
 
 FOLDER = os.environ["DRIVE_FOLDER_ID"]
 SA_KEY = os.environ.get("DRIVE_SA_KEY", "").strip()   # robot hisob (papka yopiq)
@@ -322,10 +322,6 @@ def main():
         build_news(root, list_folder, auth, RAW, ROOT, log, pub_id)
     except Exception as e:
         log("Yangiliklarda xato:", e)
-    try:
-        build_about(root, auth, RAW, ROOT, log)
-    except Exception as e:
-        log("Muallif haqida: xato:", e)
 
     # GitHub 60 kun faoliyatsiz omborda jadvalni o'chirib qo'ymasligi uchun
     now = datetime.datetime.now(datetime.timezone.utc)
