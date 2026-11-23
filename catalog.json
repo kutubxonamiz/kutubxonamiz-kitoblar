@@ -830,9 +830,9 @@
  ],
  "updated": "2026-11-23T04:57:52+00:00",
  "app": {
-  "versionCode": 9,
-  "versionName": "1.1.9",
-  "notes": "Bo'limlar, yangi dizayn, lotin va kirill nusxalar",
+  "versionCode": 40,
+  "versionName": "1.1.40",
+  "notes": "Kitoblar tezroq ochiladi, muqovalar va o'qish oynasi yaxshilandi",
   "apkUrl": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/latest/download/Kutubxonamiz.apk"
  }
 }
