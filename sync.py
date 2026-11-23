@@ -235,6 +235,9 @@ def main():
         bid = pub_id(fid)
         author, title = parse_name(f["name"])
         title, lang = split_script(title)
+        if not author:
+            # Muallif fayl nomida yozilmagan bo'lsa — hamma kitoblar uchun bitta muallif
+            author = "Абу Яҳё" if (lang == "kirill" or any(ch in CYR_LETTERS for ch in title.lower())) else "Abu Yahyo"
         img = images.get((cat, base(f["name"]).lower()))
         pdf_md5 = f.get("md5Checksum", f.get("size", ""))
         cover_src = ("img:" + img.get("md5Checksum", img["id"])) if img else ("pdf:" + pdf_md5)
