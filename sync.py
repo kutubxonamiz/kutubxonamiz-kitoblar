@@ -150,7 +150,11 @@ def split_script(title):
         out.append(w)
     if found and out and re.fullmatch(r"\(?(19|20)\d\d\)?", out[-1]):
         out.pop()  # "..._lotin_2026" dagi yil
-    clean = " ".join(out).strip(" -_()[]")
+    clean = " ".join(out).strip(" -_")
+    while clean.endswith((")", "]")) and clean.count("(") + clean.count("[") < clean.count(")") + clean.count("]"):
+        clean = clean[:-1].rstrip(" -_")
+    while clean.startswith(("(", "[")) and clean.count("(") + clean.count("[") > clean.count(")") + clean.count("]"):
+        clean = clean[1:].lstrip(" -_")
     if not lang:
         lang = "kirill" if any(ch in CYR_LETTERS for ch in title.lower()) else "lotin"
     return clean or title, lang
