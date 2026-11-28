@@ -1,6 +1,42 @@
 {
  "books": [
   {
+   "id": "2e4964709dc84655",
+   "title": "Қиссаларнинг гўзали (4-китоб)",
+   "author": "Абу Яҳё",
+   "category": "Tafsir",
+   "catOrder": 1,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/2e4964709dc84655.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/2e4964709dc84655.jpg?v=45c00b94",
+   "size": 54042994,
+   "added": "2026-11-28T13:18:29+00:00",
+   "description": "Юсуф сурасининг тафсири: 35–42-оятлар",
+   "lang": "kirill",
+   "group": "Tafsir/qissalarninggozali4kitob",
+   "md5": "20ac45c00b94b319808ceb0f7d57beddd368ed2f7e1908a43103210f407b38af",
+   "pv": 4,
+   "coverSrc": "pdf:20ac45c00b94",
+   "manba": "qolda"
+  },
+  {
+   "id": "d99d9c58f6dbff4f",
+   "title": "Qissalarning go'zali (4-kitob)",
+   "author": "Abu Yahyo",
+   "category": "Tafsir",
+   "catOrder": 1,
+   "url": "https://github.com/kutubxonamiz/kutubxonamiz-kitoblar/releases/download/kitoblar/d99d9c58f6dbff4f.pdf",
+   "cover": "https://raw.githubusercontent.com/kutubxonamiz/kutubxonamiz-kitoblar/main/covers/d99d9c58f6dbff4f.jpg?v=fbff4c07",
+   "size": 55210407,
+   "added": "2026-11-28T13:18:25+00:00",
+   "description": "Yusuf surasining tafsiri: 35–42-oyatlar",
+   "lang": "lotin",
+   "group": "Tafsir/qissalarninggozali4kitob",
+   "md5": "89f3fbff4c07ea0107c324bf49712451f24df25678609c6b6e1f9eff3371809f",
+   "pv": 4,
+   "coverSrc": "pdf:89f3fbff4c07",
+   "manba": "qolda"
+  },
+  {
    "id": "c55d0da643ac2e2d",
    "title": "Қиссаларнинг гўзали (3-китоб)",
    "author": "Абу Яҳё",
@@ -828,7 +864,7 @@
    "coverSrc": "img:0e10b40c3aed621a12bde6a22c76e9b1"
   }
  ],
- "updated": "2026-11-23T04:57:52+00:00",
+ "updated": "2026-11-28T13:19:09+00:00",
  "app": {
   "versionCode": 40,
   "versionName": "1.1.40",
